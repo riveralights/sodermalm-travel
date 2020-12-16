@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    background: #21209c;
+    color: #f1f1f1;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    min-height: 70px;
+}
+
+div.nav-logo {
+    text-align: center;
+}
+
+ul.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+li.nav-items {
+    padding: 5px 15px;
+    padding-bottom: 30px;
+}
+
+.nav-items .nav-link {
+    color: #f1f1f1;
+}
+
+header {
+    min-height: 450px;
+    background-image: url('../img/hero.jpg');
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f1f1f1;
+    background-size: cover;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+header .btn-learn-more {
+    padding: 8px 20px;
+    border: none;
+    background: #fdb827;
+    color: #ffffff;
+}
+
+header .btn-learn-more:hover {
+    padding: 8px 20px;
+    border: none;
+    background: #d69d21;
+    color: #ffffff;
+}
+
+section#about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+    color: #23120b;
+}
+
+section#services {
+    text-align: center;
+}
+
+.service-items {
+    background-color: #21209c;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: #f1f1f1;
+    border-radius: 20px;
+}
+
+.service-items i {
+    font-size: 30px;
+}
+
+footer {
+    background: #21209c;
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+footer .contact-list {
+    margin-bottom: 20px;
+}
+
+footer .contact-list p {
+    line-height: 1.8;
+}
+
+footer .contact-list a {
+    color: #f1f1f1;
+}
+
+@media (min-width:768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    nav .nav-logo {
+        font-size: 16px;
+        padding-bottom: 22px;
+    }
+
+    ul.nav-menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .services-list {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+
+    section#services h1 {
+        padding-top: 50px;
+    }
+
+    .service-items {
+        background-color: #21209c;
+        width: 50%;
+        min-height: 100px;
+        margin: 20px;
+        padding: 20px;
+        color: #f1f1f1;
+        border-radius: 20px;
+    }
+
+    footer .footer-menu {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        justify-content: space-between;
+    }
+}
